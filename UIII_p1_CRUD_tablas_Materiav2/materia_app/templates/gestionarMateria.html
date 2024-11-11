@@ -11,13 +11,13 @@
 
 
             <div class="form-group">
-                <input type="text " id="txtcodigo" name="txtcodigo" placeholder="codigo materia" minlenght="1" maxLenght"6" required>
+                <input type="text " id="txtcodigo" name="txtcodigo" class="form-control" placeholder="codigo materia" minlenght="1" maxLenght"6" required>
             </div>
             <div class="form-group py-3">
-                <input type="text " id="txtnombre" name="txtnombre" placeholder="nombre materia" maxLenght"100" required>
+                <input type="text " id="txtnombre" name="txtnombre" class="form-control" placeholder="nombre materia" maxLenght"100" required>
             </div>
             <div class="form-group py-2">
-                <input type="text " id="numcreditos" name="numcreditos"  min="1" max="9" value="1" required>
+                <input type="text " id="numcreditos" name="numcreditos" class="form-control"  min="1" max="9" value="1" required>
             </div>
             <div class="form-group py-2">
                 <button type="submit" class="btn btn-primary">GUARDAR MATERIA</button>
@@ -29,12 +29,14 @@
 
 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
     <h1>ay papa</h1>
-        <table class="table">
+        <table class="table table table-striped">
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <th scope="col">codigo</th>
+                <th scope="col">nombre</th>
+                <th scope="col">codigo</th>
+                <th> opciones </th>
                 
             </tr>
             </thead>
@@ -45,6 +47,9 @@
                     <d> {{m.codigo}} </td>
                     <td> {{m.nombre}} </td>
                     <td> {{m.creditos}} </td>
+                    <td> <a href="seleccionarMateria/{{m.codigo}}" class="btn btn-success">editar </a>  </td><!--falta-->
+                    <td> <a href="borrarMateria/{{m.codigo}}" class="btn btn-danger">borrar</a>  </td>
+
                 </tr>
 
             {% endfor %}
