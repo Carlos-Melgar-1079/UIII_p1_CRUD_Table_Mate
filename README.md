@@ -8,5 +8,6 @@ CRUD create-crear Read-leer Update-actualizar Delete-borrar tabla Materia
 
 
 
-![image](https://github.com/user-attachments/assets/5ac0ec86-eea2-4ca8-8501-0fb029aa3fa2)
+![image](https://github.com/user-attachments/assets/90265a4c-130d-4e14-9158-b4fb7be1ce4c)
+
 
